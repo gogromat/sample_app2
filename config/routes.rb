@@ -1,4 +1,8 @@
 SampleApp2::Application.routes.draw do
+  get "static_pages/home"   #get is the GET request to the static_pages/home action 
+
+  get "static_pages/help"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
