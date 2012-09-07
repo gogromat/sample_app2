@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 
 gem 'rails', '3.2.8'
 gem 'bootstrap-sass', '2.0.4'
+# Cryptography: "bcrypt" password encryption
 gem 'bcrypt-ruby', '3.0.1'
 gem 'faker', '1.0.1'
 gem 'will_paginate', '3.0.3'
@@ -24,6 +25,10 @@ group :test, :development do
   gem 'guard-spork', '0.3.2'
   gem 'spork', '0.9.0'
 end
+
+# bundle exec annotate
+# provides annotation to model files
+gem 'annotate', '2.5.0', group: :development
 
 group :test do
   gem 'capybara', '1.1.2'
