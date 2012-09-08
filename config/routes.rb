@@ -1,13 +1,24 @@
 SampleApp2::Application.routes.draw do
-  get "users/new"
+  resources :users
+  #get "users/new"
+  # Fully RESTful resource:
+  # /users        index     GET       users_path
+  # /users/1      show      GET       user_path(user)
+  # /users/new    new       GET       new_user_path
+  # /users        create    POST      users_path
+  # /users/1/edit edit      GET       edit_user_path(user)
+  # /users/1      update    PUT       user_path(user)
+  # /users/1      destroy   DELETE    user_path(user)
+
+
+  root              to: 'static_pages#home'
+  #match '/',        to: 'static_page#home'
+
 
   #get "static_pages/home"   #get is the GET request to the static_pages/home action
   #get "static_pages/help"
   #get "static_pages/about"
   #get "static_pages/contact"
-
-  root              to: 'static_pages#home'
-  #match '/',        to: 'static_page#home'
 
                         #controller   action
   match '/help',    to: 'static_pages#help'
@@ -15,6 +26,8 @@ SampleApp2::Application.routes.draw do
   match '/contact', to: 'static_pages#contact'
 
   match '/signup',  to: 'users#new'
+
+
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
