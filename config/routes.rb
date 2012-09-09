@@ -1,5 +1,7 @@
 SampleApp2::Application.routes.draw do
   resources :users
+  resources :sessions, only: [:new, :create, :destroy]
+
   #get "users/new"
   # Fully RESTful resource:
   # /users        index     GET       users_path
@@ -26,6 +28,9 @@ SampleApp2::Application.routes.draw do
   match '/contact', to: 'static_pages#contact'
 
   match '/signup',  to: 'users#new'
+  match '/signin',  to: 'sessions#new'
+                                            #Via HTTP DELETE Request
+  match '/signout', to: 'sessions#destroy', via: :delete
 
 
 
