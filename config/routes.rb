@@ -1,6 +1,11 @@
 SampleApp2::Application.routes.draw do
   resources :users
+                          # no need to show or edit
   resources :sessions, only: [:new, :create, :destroy]
+  # /signin        signin_path    GET     new
+  # /sessions      sessions_path  POST    create
+  # /signout       signout_path   DELETE  destroy
+
 
   #get "users/new"
   # Fully RESTful resource:
@@ -29,7 +34,7 @@ SampleApp2::Application.routes.draw do
 
   match '/signup',  to: 'users#new'
   match '/signin',  to: 'sessions#new'
-                                            #Via HTTP DELETE Request
+                                            #via HTTP DELETE Request
   match '/signout', to: 'sessions#destroy', via: :delete
 
 
