@@ -20,7 +20,7 @@ end
 gem 'jquery-rails', '2.0.2'
 
 group :test, :development do
-  gem 'rspec-rails', '2.10.0'
+  gem 'rspec-rails',:git => "git://github.com/rspec/rspec-rails.git" # '2.10.0'
   gem 'guard-rspec', '0.5.5'
   gem 'guard-spork', '0.3.2'
   gem 'spork', '0.9.0'
@@ -31,7 +31,7 @@ end
 gem 'annotate', '2.5.0', group: :development
 
 group :test do
-  gem 'capybara', '1.1.2'
+  gem 'capybara', '~> 1.1.2'
   gem 'rb-fchange', '0.0.5'
   gem 'rb-notifu', '0.0.4'
   gem 'win32console', '1.3.0'
