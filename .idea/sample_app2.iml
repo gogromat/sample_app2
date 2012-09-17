@@ -36,7 +36,7 @@
     </requirement>
     <requirement>
       <requirement>
-        <dependency name="capybara" version="1.1.2" bound="LATEST_IN_BRANCH" git="false" path="false" doRequire="true" />
+        <dependency name="capybara" version="1.1.2" bound="EQUAL" git="false" path="false" doRequire="true" />
       </requirement>
       <source from="Gemfile" />
     </requirement>
@@ -114,7 +114,7 @@
     </requirement>
     <requirement>
       <requirement>
-        <dependency name="rspec-rails" version="0" bound="GREATER_OR_EQUAL" git="true" path="false" doRequire="true" />
+        <dependency name="rspec-rails" version="2.10.0" bound="EQUAL" git="false" path="false" doRequire="true" />
       </requirement>
       <source from="Gemfile" />
     </requirement>
@@ -157,10 +157,92 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-  </component>
-  <component name="RModuleSettingsStorage">
-    <LOAD_PATH number="0" />
-    <I18N_FOLDERS number="1" string0="$MODULE_DIR$/config/locales" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] rack (v1.4.1, C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/rack-1.4.1)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] polyglot (v0.3.3, C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/polyglot-0.3.3)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] rdoc (v3.12, C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/rdoc-3.12)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] erubis (v2.7.0, C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/erubis-2.7.0)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] activemodel (v3.2.8, C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/activemodel-3.2.8)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] multi_json (v1.3.6, C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/multi_json-1.3.6)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] rack-test (v0.6.1, C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/rack-test-0.6.1)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] rack-ssl (v1.3.2, C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/rack-ssl-1.3.2)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] arel (v3.0.2, C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/arel-3.0.2)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] actionpack (v3.2.8, C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] actionmailer (v3.2.8, C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionmailer-3.2.8)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] tzinfo (v0.3.33, C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/tzinfo-0.3.33)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] hike (v1.2.1, C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/hike-1.2.1)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] mail (v2.4.4, C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/mail-2.4.4)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] activeresource (v3.2.8, C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/activeresource-3.2.8)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] i18n (v0.6.0, C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/i18n-0.6.0)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] mime-types (v1.19, C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/mime-types-1.19)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] railties (v3.2.8, C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/railties-3.2.8)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] journey (v1.0.4, C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/journey-1.0.4)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] treetop (v1.4.10, C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/treetop-1.4.10)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] rails (v3.2.8, C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/rails-3.2.8)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] rack-cache (v1.2, C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/rack-cache-1.2)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] sprockets (v2.1.3, C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sprockets-2.1.3)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] thor (v0.16.0, C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/thor-0.16.0)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] json (v1.7.5, C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/json-1.7.5)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] bundler (v1.0.22, C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/bundler-1.0.22)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] activesupport (v3.2.8, C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/activesupport-3.2.8)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] rake (v0.9.2.2, C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/rake-0.9.2.2)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] builder (v3.0.0, C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/builder-3.0.0)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] activerecord (v3.2.8, C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/activerecord-3.2.8)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] tilt (v1.3.3, C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/tilt-1.3.3)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] pg (v0.13.1, C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/pg-0.13.1-x86-mingw32)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] spork (v0.9.0, C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/spork-0.9.0-x86-mingw32)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] rb-fchange (v0.0.5, C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/rb-fchange-0.0.5)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] will_paginate (v3.0.3, C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/will_paginate-3.0.3)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] uglifier (v1.2.3, C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/uglifier-1.2.3)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] database_cleaner (v0.7.0, C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/database_cleaner-0.7.0)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] pg (v0.12.2, C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/pg-0.12.2-x86-mingw32)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] guard-spork (v0.3.2, C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/guard-spork-0.3.2)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] annotate (v2.5.0, C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/annotate-2.5.0)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] win32console (v1.3.0, C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/win32console-1.3.0-x86-mingw32)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] guard-rspec (v0.5.5, C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/guard-rspec-0.5.5)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] sass-rails (v3.2.4, C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-rails-3.2.4)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] coffee-rails (v3.2.2, C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/coffee-rails-3.2.2)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] bootstrap-will_paginate (v0.0.6, C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/bootstrap-will_paginate-0.0.6)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] factory_girl_rails (v1.4.0, C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/factory_girl_rails-1.4.0)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] rb-notifu (v0.0.4, C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/rb-notifu-0.0.4)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] bcrypt-ruby (v3.0.1, C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/bcrypt-ruby-3.0.1-x86-mingw32)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] faker (v1.0.1, C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/faker-1.0.1)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] rspec-rails (v2.10.0, C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/rspec-rails-2.10.0)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] bootstrap-sass (v2.0.4.0, C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/bootstrap-sass-2.0.4.0)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] cucumber-rails (v1.2.1, C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/cucumber-rails-1.2.1)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] capybara (v1.1.2, C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/capybara-1.1.2)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] jquery-rails (v2.0.2, C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/jquery-rails-2.0.2)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] spork (v0.9.0, C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/spork-0.9.0-x86-mingw32)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] coffee-script-source (v1.3.3, C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/coffee-script-source-1.3.3)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] windows-api (v0.4.2, C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/windows-api-0.4.2)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] will_paginate (v3.0.3, C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/will_paginate-3.0.3)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] execjs (v1.4.0, C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/execjs-1.4.0)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] sass (v3.2.1, C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.2.1)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] childprocess (v0.3.5, C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/childprocess-0.3.5)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] libwebsocket (v0.1.5, C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/libwebsocket-0.1.5)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] listen (v0.4.7, C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/listen-0.4.7)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] rb-fsevent (v0.9.1, C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/rb-fsevent-0.9.1)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] coffee-script (v2.2.0, C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/coffee-script-2.2.0)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] rspec-expectations (v2.10.0, C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/rspec-expectations-2.10.0)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] selenium-webdriver (v2.25.0, C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/selenium-webdriver-2.25.0)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] rb-fchange (v0.0.5, C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/rb-fchange-0.0.5)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] ffi (v1.1.5, C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/ffi-1.1.5)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] cucumber (v1.2.1, C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/cucumber-1.2.1)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] xpath (v0.1.4, C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/xpath-0.1.4)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] rubyzip (v0.9.9, C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/rubyzip-0.9.9)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] rspec (v2.10.0, C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/rspec-2.10.0)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] guard (v1.3.2, C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/guard-1.3.2)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] addressable (v2.3.2, C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/addressable-2.3.2)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] win32-api (v1.4.8, C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/win32-api-1.4.8-x86-mingw32)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] rspec-mocks (v2.10.1, C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/rspec-mocks-2.10.1)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] rb-inotify (v0.8.8, C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/rb-inotify-0.8.8)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] nokogiri (v1.5.5, C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/nokogiri-1.5.5-x86-mingw32)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] factory_girl (v2.3.2, C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/factory_girl-2.3.2)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] diff-lcs (v1.1.3, C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/diff-lcs-1.1.3)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] capybara (v1.1.2, C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/capybara-1.1.2)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] windows-pr (v1.2.2, C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/windows-pr-1.2.2)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] gherkin (v2.11.2, C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/gherkin-2.11.2-x86-mingw32)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] win32-process (v0.6.6, C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/win32-process-0.6.6)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] rspec-core (v2.10.1, C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/rspec-core-2.10.1)" level="application" />
   </component>
 </module>
 
