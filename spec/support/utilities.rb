@@ -21,5 +21,5 @@ def valid_signup
   #only 1 at the moment        ([a..z].shuffle * 10).join
   fill_in "Email",                 with: "user@example.com"
   fill_in "Password",              with: "foobar"
-  fill_in "Confirmation",          with: "foobar"
+  fill_in "Confirm Password",      with: "foobar"
 end

@@ -62,6 +62,11 @@ describe "User pages" do
         # admin should not delete himself... Duh!
         it { should_not have_link('delete', href: user_path(admin)) }
 
+        describe "tries to delete himself" do
+          before { delete user_path(admin) }
+          specify { response.should redirect_to(users_url)}
+        end
+
       end
 
 
@@ -87,7 +92,7 @@ describe "User pages" do
   describe "signup" do
     before { visit signup_path }
 
-    let(:submit) { "Create my account" }
+    let(:submit) { "Save" }
 
     describe "with invalid information" do
 
@@ -140,7 +145,7 @@ describe "User pages" do
     end
 
     describe "with invalid information" do
-      before { click_button "Save changes" }
+      before { click_button "Save" }
 
       it { should have_content('error') }
     end
@@ -153,8 +158,8 @@ describe "User pages" do
         fill_in "Name",                   with: new_name
         fill_in "Email",                  with: new_email
         fill_in "Password",               with: user.password
-        fill_in "Confirm Password",  with: user.password
-        click_button "Save changes"
+        fill_in "Confirm Password",       with: user.password
+        click_button "Save"
       end
 
       it { should have_selector('title', text: new_name)}
