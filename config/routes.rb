@@ -1,11 +1,11 @@
 SampleApp2::Application.routes.draw do
   resources :users
                           # no need to show or edit
-  resources :sessions, only: [:new, :create, :destroy]
+  resources :sessions,  only: [:new, :create, :destroy]
+  resources :microposts,only: [:create, :destroy]
   # /signin        signin_path    GET     new
   # /sessions      sessions_path  POST    create
   # /signout       signout_path   DELETE  destroy
-
 
   #get "users/new"
   # Fully RESTful resource:
@@ -16,7 +16,6 @@ SampleApp2::Application.routes.draw do
   # /users/1/edit edit      GET       edit_user_path(user)
   # /users/1      update    PUT       user_path(user)
   # /users/1      destroy   DELETE    user_path(user)
-
 
   root              to: 'static_pages#home'
   #match '/',        to: 'static_page#home'

@@ -26,14 +26,14 @@ describe "Authentication" do
 
       describe "after visiting another page" do
         before { click_link "Home"}
-        it { should_not have_selector('div.alert.alert-error')}
+        it     { should_not have_selector('div.alert.alert-error')}
       end
     end
 
     describe "with valid information" do
                   #Just create a DB user we can access later on
       let(:user) {FactoryGirl.create(:user)}
-      before { valid_signin(user)}
+      before { sign_in(user)}
       #before do
       #  fill_in "Email",    with: user.email
       #  fill_in "Password", with: user.password
@@ -111,12 +111,26 @@ describe "Authentication" do
 
         end
 
+        describe "in the Microposts controller" do
+
+          describe "submitting to the create action" do
+            before  { post microposts_path }
+            specify { response.should redirect_to(signin_path) }
+          end
+
+          describe "submitting to the destroy action" do        #not user's micropost
+            before  { delete micropost_path(FactoryGirl.create(:micropost)) }
+            specify { response.should redirect_to(signin_path) }
+          end
+
+        end
+
       end
 
       describe "as wrong user" do
         let(:user) {FactoryGirl.create(:user)}
         let(:wrong_user) {FactoryGirl.create(:user, email: "wrong@example.com")}
-        before { valid_signin user}
+        before { sign_in user}
 
         describe "visiting Users#edit page" do
           before { visit edit_user_path(wrong_user) }
@@ -134,7 +148,7 @@ describe "Authentication" do
         let(:user)     { FactoryGirl.create(:user) }
         let(:non_admin) { FactoryGirl.create(:user) }
 
-        before { valid_signin non_admin }
+        before { sign_in non_admin }
 
         describe "submitting a DELETE request to the Users#destroy action" do
           before  { delete user_path(user) }
