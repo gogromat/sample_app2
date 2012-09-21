@@ -38,11 +38,40 @@ describe "Static pages" do
         end
       end
 
+      describe "should show right number of user microposts" do
+        # Ruby works, Rails helper.pluralize don't
+        let(:posts_count) { user.microposts.count }
+        let(:pluralized)  { posts_count.to_s + " micropost".pluralize(posts_count) }
+        before do
+          FactoryGirl.create(:micropost, user: user, content: "Post 3")
+          FactoryGirl.create(:micropost, user: user, content: "Post 4")
+          visit root_path
+        end
+
+        specify {page.should have_content("#{pluralized}") }
+      end
+
+      describe "should have right pagination" do
+
+        before(:all) { 30.times { FactoryGirl.create(:micropost, user: user, content: "Lorem ipsum")}}
+         after(:all) { user.microposts.delete_all }
+
+        it { should have_selector('div.pagination')}
+
+        it 'should list each micropost by user' do
+          #User.all.each do |user|
+          user.microposts.paginate(page: 1).each do |micropost|
+            page.should have_selector('li', text: micropost.content)
+          end
+        end
+
+      end
+
     end
 
     describe "for not signed in users" do
-      #it { should have_link "Sign in"}
-      #it { should have_link "Sign up now!"}
+      it { should have_link "Sign in"}
+      it { should have_link "Sign up now!"}
     end
 
   end

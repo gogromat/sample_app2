@@ -14,3 +14,25 @@
 //= require jquery_ujs
 //= require bootstrap
 //= require_tree .
+
+$(document).ready(function(){
+
+    $('textarea#micropost_content').keyup(function(){
+        var span = $('span#micropost_length');
+        if (span.length > 0) {
+            var self   = $(this);
+            var length = self.val().length;
+            var text   = (140 - self.val().length)+" characters left";
+
+            span.html(text);
+
+            if (length > 140) {
+                span.css('color','red');
+            }
+            else {
+                span.css('color','green');
+            }
+        }
+    }).trigger('keyup');
+
+});

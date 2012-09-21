@@ -1,10 +1,12 @@
 require 'spec_helper'
+require 'pp'
 
 describe "Micropost pages" do
 
   subject { page }
 
   let(:user) { FactoryGirl.create(:user) }
+
   #let(:micropost) { FactoryGirl.create(:micropost,user: user) }
 
   before { sign_in user }
@@ -47,5 +49,21 @@ describe "Micropost pages" do
     end
   end
 
+  describe "users should not see delete link to other users microposts" do
+
+    let(:second_user) { FactoryGirl.create(:user) }
+    before(:all) do
+      5.times { FactoryGirl.create(:micropost, user: second_user, content: "Lorem ipsum")}
+      visit user_path(second_user)
+    end
+
+    it { should_not have_selector("li", text: "delete") }
+    it { should_not have_link('delete') }
+
+    after(:all) do
+      second_user.microposts.delete_all
+      second_user.destroy
+    end
+  end
 
 end

@@ -46,7 +46,7 @@ describe "User pages" do
       it { should_not have_link('delete') }
 
       describe "as an admin user" do
-        let(:admin) { Factory.create(:admin) }
+        let(:admin) { FactoryGirl.create(:admin) }
 
         before do
           sign_in admin
@@ -80,7 +80,7 @@ describe "User pages" do
   end
 
   describe "profile page" do
-    let(:user) {FactoryGirl.create(:user)}
+    let(:user) { FactoryGirl.create(:user)}
     let!(:m1)  { FactoryGirl.create(:micropost, user: user, content: "Foo") }
     let!(:m2)  { FactoryGirl.create(:micropost, user: user, content: "Bar") }
 
