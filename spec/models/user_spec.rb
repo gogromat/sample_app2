@@ -29,17 +29,22 @@ describe User do
     subject { @user }
 
     # password_digest => password & password_confirmation
-    it { should respond_to(:name)}
-    it { should respond_to(:email)}
+    it { should respond_to(:name)           }
+    it { should respond_to(:email)          }
     it { should respond_to(:password_digest)}
-    it { should respond_to(:password)}
+    it { should respond_to(:password)       }
     it { should respond_to(:password_confirmation) }
     it { should respond_to(:remember_token) }
-    it { should respond_to(:admin) }
-    it { should respond_to(:authenticate) }
-    it { should respond_to(:microposts) }
+    it { should respond_to(:admin)          }
+    it { should respond_to(:authenticate)   }
+
+    it { should respond_to(:microposts)     }
     #feed - includes current user posts, excludes different user posts
     it { should respond_to(:feed)}
+
+    it { should respond_to(:relationships)  }
+    it { should respond_to(:followed_users) }
+
 
     it { should     be_valid }
     it { should_not be_admin }
