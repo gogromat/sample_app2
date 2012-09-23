@@ -38,6 +38,17 @@ describe "Static pages" do
         end
       end
 
+      describe "it should have following/followers count" do
+        let(:other_user) { FactoryGirl.create(:user) }
+        before do
+          other_user.follow!(user)
+          visit root_path
+        end
+
+        it { should have_link("0 following", href: following_user_path(user)) }
+        it { should have_link("1 followers", href: followers_user_path(user)) }
+      end
+
       describe "should show right number of user microposts" do
         # Ruby works, Rails helper.pluralize don't
         let(:posts_count) { user.microposts.count }

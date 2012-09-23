@@ -117,6 +117,36 @@ aside {
   margin-right: 10px;
 }
 
+.stats {
+    overflow: auto;
+    a {
+        float: left;
+        margin: 1px 1px;
+        padding: 0 10px;
+        border-left: 1px solid $grayLighter;
+        color: gray;
+        &:first-child {
+            padding-left: 1;
+            border: 0;
+        }
+        &:hover {
+            text-decoration: none;
+            color: $blue;
+        }
+    }
+    strong {
+        display: block;
+    }
+}
+
+.user_avatars {
+    overflow: auto;
+    margin-top: 10px;
+    .gravatar {
+        margin: 1px 1px;
+    }
+}
+
 // footer
 
 footer {
@@ -213,3 +243,4 @@ div.nowrap {
     display: inline !important;
     white-space: nowrap !important;
 }
+

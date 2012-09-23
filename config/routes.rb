@@ -1,11 +1,28 @@
 SampleApp2::Application.routes.draw do
-  resources :users
                           # no need to show or edit
-  resources :sessions,  only: [:new, :create, :destroy]
-  resources :microposts,only: [:create, :destroy]
+  resources :sessions,     only: [:new, :create, :destroy]
+  resources :microposts,   only: [:create, :destroy]
+  resources :relationships, only: [:create, :destroy]
   # /signin        signin_path    GET     new
   # /sessions      sessions_path  POST    create
   # /signout       signout_path   DELETE  destroy
+
+
+  #resources :users
+  resources :users do
+    # user/1/following
+    member do
+      get :following, :followers
+    end
+    # userS/tigers
+    #collection do
+    #  get :tigers
+    #end
+  end
+
+
+
+
 
   #get "users/new"
   # Fully RESTful resource:
