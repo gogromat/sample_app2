@@ -10,7 +10,7 @@ development:
   pool:     5
   timeout:  5000
   username: GogromaT
-  password: poslednii2
+  password: ***
   host:     localhost
 
 
@@ -24,14 +24,14 @@ test: &test
   pool:     5
   timeout:  5000
   username: GogromaT
-  password: poslednii2
+  password: ***
   host:     localhost
 
 
 production:
   adapter:  postgresql
   encoding: utf8
-  database: project_production
+  database: ***
   pool:     5
   timeout:  5000
   username: GogromaT
